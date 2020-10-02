@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/provsalt/scorehud-plugins
+build-by-default: true
+branches:
+- stable
+projects:
+  economy-hud:
+    path: economy-hud/
+...
