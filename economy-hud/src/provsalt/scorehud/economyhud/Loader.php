@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use provsalt\scorehud\economyhud\events\ChangeListener;
 
 class Loader extends PluginBase {
-	public function onEnable(){
+	public function onEnable() :void{
 		$this->getServer()->getPluginManager()->registerEvents(new ChangeListener(), $this);
 	}
 }

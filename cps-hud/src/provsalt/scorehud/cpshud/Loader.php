@@ -9,7 +9,7 @@ use provsalt\scorehud\cpshud\events\CPSEvent;
 use provsalt\scorehud\cpshud\tasks\CheckCPS;
 
 class Loader extends PluginBase {
-	public function onEnable(){
+	public function onEnable() :void{
 		$this->getServer()->getPluginManager()->registerEvents(new CPSEvent(), $this);
 		$this->getScheduler()->scheduleRepeatingTask(new CheckCPS(), 20);
 	}

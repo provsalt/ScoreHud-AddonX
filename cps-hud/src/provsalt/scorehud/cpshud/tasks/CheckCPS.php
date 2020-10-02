@@ -11,7 +11,7 @@ use pocketmine\Server;
 
 class CheckCPS extends Task {
 
-	public function onRun(int $currentTick){
+	public function onRun(int $currentTick) :void{
 		foreach(Server::getInstance()->getOnlinePlayers() as $player){
 			(new PlayerTagUpdateEvent($player, new ScoreTag("cps.cps", strval(Server::getInstance()->getPluginManager()->getPlugin("CPS")->getClicks($player)))))->call();
 		}
