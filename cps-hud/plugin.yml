@@ -1,0 +1,7 @@
+name: CPS-Hud
+depend:
+- ScoreHud
+- CPS
+api: 3.15.0
+main: provsalt\scorehud\cpshud\Loader
+version: 0.0.1

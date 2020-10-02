@@ -1,0 +1,7 @@
+name: Economy-HUD
+depend:
+  - ScoreHud
+  - EconomyAPI
+api: 3.15.0
+main: provsalt\scorehud\economyhud\Loader
+version: 0.0.1
