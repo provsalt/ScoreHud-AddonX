@@ -1,6 +1,6 @@
-#ScoreHud AddonsX
+# ScoreHud AddonsX
 
-###Includes many addons for ScoreHUD
+### Includes many addons for ScoreHUD
 Since this project is new, just suggest what you need via my discord in my profile or make an issue in this repository.
 
 Features:
