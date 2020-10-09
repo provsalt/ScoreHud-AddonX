@@ -14,6 +14,8 @@ use pocketmine\Server;
 
 class ChangeListener implements Listener{
 	public function onMoney(MoneyChangedEvent $event) :void{
+		if ($event->getUsername === null ) return;
+		
 		$server = Server::getInstance();
 		$tag = new PlayerTagUpdateEvent($server->getPlayerExact($event->getUsername()), new ScoreTag("economyapi.money", strval($event->getNewMoney())));
 		$tag->call();
